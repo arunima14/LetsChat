@@ -7,7 +7,7 @@ const Chat = () => {
   const chatProps = useMultiChatLogic(
     import.meta.env.VITE_PROJECT_ID, 
     "test_user",
-    "test_user"
+    "1234"
   )
   return (
     <div style={{flexBasis: "100%"}}>

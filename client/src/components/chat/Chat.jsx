@@ -5,11 +5,11 @@ import AiText from '../customMessage/AiText';
 import AiCode from '../customMessage/AiCode';
 import AiAssist from '../customMessage/AiAssist';
 
-const Chat = () => {
+const Chat = ({ user, password }) => {
   const chatProps = useMultiChatLogic(
     import.meta.env.VITE_PROJECT_ID, 
-    "test_user",
-    "1234"
+    user,
+    password
   )
   return (
     <div style={{flexBasis: "100%"}}>

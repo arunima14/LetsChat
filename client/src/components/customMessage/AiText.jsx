@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import MessageFormUI from './MessageFormUI';
 import { usePostAiTextMutation } from '../../state/api';
 
-const Ai = ({ props, activeChat }) => {
+const AiText = ({ props, activeChat }) => {
   const [message, setMessage] = useState("");
   const [attachment, setAttachment] = useState("");
   const [trigger] = usePostAiTextMutation();
@@ -37,4 +37,4 @@ const Ai = ({ props, activeChat }) => {
   )
 }
 
-export default Ai 
+export default AiText

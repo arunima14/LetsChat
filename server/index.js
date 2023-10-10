@@ -4,7 +4,7 @@ import cors from "cors";
 import dotenv from"dotenv";
 import helmet from "helmet";
 import morgan from "morgan";
-import OpenAI from "openai";
+import { OpenAI } from "openai";
 import OpenaiRoutes from './routes/openai.js';
 
 /* CONFIGURATION */
